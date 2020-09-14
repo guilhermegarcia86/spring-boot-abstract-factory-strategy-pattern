@@ -20,8 +20,10 @@ public class DemoApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO Auto-generated method stub
+		
 		service.process(BeerType.ALE.getName());
+		service.process(BeerType.IPA.getName());
+		service.process(BeerType.STOUT.getName());
 	}
 
 }
